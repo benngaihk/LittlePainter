@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Little Painter</title>
+
+<script type="text/javascript" src="jquery-1.12.2.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script src="painter.js"></script>
+<script src="spectrum.js"></script>
+
+<link rel='stylesheet' type="text/css" href="painter.css" />
+<link rel='stylesheet' type="text/css" href="spectrum.css" />
+
+</head>
+<body>
+
+
+<div id="edit_part">
+	<canvas class="drawing_board" id='drawing_board'></canvas>
+	<div id="drawing_control">
+		<div class='dropdown'>
+			<div class="choose_pencil_btn"></div>
+			<div class="choose_line_btn dropdown_content"></div>
+			<div class="choose_rect_btn dropdown_content"></div>
+			<div class="choose_circle_btn dropdown_content"></div>
+			<div class="choose_text_btn dropdown_content"></div>
+			<div class="choose_cursor_btn dropdown_content"></div>
+		</div>
+		<div class="choose_drawing_color_btn"></div>
+		<div class="eraser_drawing_btn"></div>
+		<div class="clear_all_drawing_btn"></div>
+		<div class="undo_btn"></div>
+		<div class="redo_btn"></div>
+		<div class="save_btn"></div>
+		<div class="reload_btn"></div>
+	</div>
+	
+</div>
+
+
+</body>
+</html>

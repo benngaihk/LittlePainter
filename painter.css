@@ -1,0 +1,142 @@
+#drawing_board 
+{
+    float: left;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#edit_part {
+    background-color: white;
+    padding: 0px;
+    border: 3px ridge gray;
+    position: relative;
+    min-height: calc(150 / 375 * 100vw + 20px);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%; 
+}
+
+#bg_img {
+/*  border: 3px ridge gray; */
+}
+
+
+#drawing_control{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 0;
+}
+
+#drawing_control > [class*='_btn'] {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#drawing_control .dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#drawing_control .dropdown > [class*='_btn']
+{
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+#drawing_control .dropdown .dropdown_content {
+    display: none;
+}
+
+.choose_pencil_btn {
+    background-image: url('icon/btn_pencil_n.png');
+}
+
+.choose_line_btn {
+    background-image: url('icon/btn_line_n.png');
+}
+
+.choose_rect_btn {
+    background-image: url('icon/btn_rect_n.png');
+}
+
+.choose_circle_btn {
+    background-image: url('icon/btn_circle_n.png');
+}
+
+.choose_text_btn {
+    background-image: url('icon/btn_text_n.png');
+}
+
+.choose_cursor_btn {
+    background-image: url('icon/btn_cursor_n.png');
+}
+
+.choose_drawing_color_btn {
+    border: 2px groove gray;
+    box-sizing: border-box;
+}
+
+.eraser_drawing_btn {
+    background-image: url('icon/btn_eraser_n.png');
+}
+.eraser_drawing_btn:active, .eraser_drawing_btn.on {
+    background-image: url('icon/btn_eraser_s.png');
+}
+
+.clear_all_drawing_btn {
+    background-image: url('icon/btn_delete_n.png');
+}
+.clear_all_drawing_btn:active {
+    background-image: url('icon/btn_delete_s.png');
+}
+
+.undo_btn {
+    background-image: url('icon/btn_undo_n.png');
+}
+.undo_btn:active {
+    background-image: url('icon/btn_undo_s.png');
+}
+
+.redo_btn {
+    background-image: url('icon/btn_redo_n.png');
+}
+.redo_btn:active {
+    background-image: url('icon/btn_redo_s.png');
+}
+
+.save_btn {
+    background-image: url('icon/btn_save_n.png');
+}
+.save_btn:active {
+    background-image: url('icon/btn_save_s.png');
+}
+
+.reload_btn {
+    background-image: url('icon/btn_reload_n.png');
+}
+.reload_btn:active {
+    background-image: url('icon/btn_reload_s.png');
+}
+
+.hide
+{
+    visibility: hidden;
+}
